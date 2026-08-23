@@ -1,0 +1,1500 @@
+endo<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacante Jefe de Taller | MH Automotriz</title>
+    <meta name="description" content="Únete al equipo de MH Automotriz como Jefe de Taller en Merliot, Santa Tecla. Conoce los requisitos y postúlate.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Vacante Jefe de Taller | MH Automotriz">
+    <meta property="og:description" content="Únete al equipo de MH Automotriz como Jefe de Taller en Merliot, Santa Tecla. Conoce los requisitos y postúlate.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- META PIXEL HERE -->
+    <!-- GOOGLE ANALYTICS HERE -->
+    
+    <style>
+        /* ===========================
+           CSS RESET & BASE
+        =========================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            /* Colors */
+            --color-primary: #C41E3A;
+            --color-primary-hover: #A01830;
+            --color-dark: #1A1A1A;
+            --color-gray-dark: #4A4A4A;
+            --color-gray-medium: #757575;
+            --color-gray-light: #F5F5F5;
+            --color-white: #FFFFFF;
+            --color-success: #10B981;
+            --color-error: #EF4444;
+            
+            /* Typography */
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            
+            /* Spacing */
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --spacing-2xl: 4rem;
+            
+            /* Border Radius */
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 14px;
+            
+            /* Transitions */
+            --transition: all 0.2s ease;
+        }
+        
+        body {
+            font-family: var(--font-family);
+            color: var(--color-dark);
+            background-color: var(--color-white);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* ===========================
+           TYPOGRAPHY
+        =========================== */
+        h1, h2, h3, h4, h5, h6 {
+            line-height: 1.2;
+            font-weight: 700;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 2.75rem;
+            }
+            
+            h2 {
+                font-size: 2.25rem;
+            }
+            
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        /* ===========================
+           LAYOUT
+        =========================== */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+        
+        .section {
+            padding: var(--spacing-xl) 0;
+        }
+        
+        @media (min-width: 768px) {
+            .section {
+                padding: var(--spacing-2xl) 0;
+            }
+        }
+        
+        /* ===========================
+           HERO SECTION
+        =========================== */
+        .hero {
+            background: linear-gradient(135deg, var(--color-gray-light) 0%, var(--color-white) 100%);
+            padding: var(--spacing-lg) 0 var(--spacing-xl) 0;
+            text-align: center;
+        }
+        
+        .hero__logo {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .hero__logo-text {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--color-dark);
+            letter-spacing: -0.02em;
+        }
+        
+        .hero__logo-subtitle {
+            font-size: 0.875rem;
+            color: var(--color-gray-medium);
+            font-weight: 500;
+            margin-top: 4px;
+        }
+        
+        .hero__label {
+            display: inline-block;
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--radius-sm);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .hero__title {
+            margin-bottom: var(--spacing-sm);
+            color: var(--color-dark);
+        }
+        
+        .hero__subtitle {
+            font-size: 1.125rem;
+            color: var(--color-gray-dark);
+            margin-bottom: var(--spacing-lg);
+            font-weight: 400;
+        }
+        
+        .hero__badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+            justify-content: center;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .badge {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background-color: var(--color-white);
+            padding: var(--spacing-xs) var(--spacing-md);
+            border-radius: var(--radius-md);
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-dark);
+            border: 1px solid #E5E5E5;
+        }
+        
+        .hero__cta {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        @media (min-width: 768px) {
+            .hero {
+                padding: var(--spacing-2xl) 0;
+            }
+            
+            .hero__cta {
+                flex-direction: row;
+                max-width: 500px;
+            }
+        }
+        
+        /* ===========================
+           BUTTONS
+        =========================== */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            border-radius: var(--radius-md);
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: var(--font-family);
+            white-space: nowrap;
+        }
+        
+        .btn:focus {
+            outline: 3px solid rgba(196, 30, 58, 0.3);
+            outline-offset: 2px;
+        }
+        
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--color-primary-hover);
+            transform: translateY(-1px);
+        }
+        
+        .btn-secondary {
+            background-color: var(--color-white);
+            color: var(--color-primary);
+            border: 2px solid var(--color-primary);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+        
+        .btn-full {
+            width: 100%;
+        }
+        
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        /* ===========================
+           EL PUESTO SECTION
+        =========================== */
+        .puesto {
+            background-color: var(--color-white);
+        }
+        
+        .puesto__header {
+            text-align: center;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .puesto__title {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .puesto__description {
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--color-gray-dark);
+            font-size: 1.125rem;
+        }
+        
+        .puesto__content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .puesto__box {
+            background-color: var(--color-gray-light);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            border-left: 4px solid var(--color-primary);
+        }
+        
+        .puesto__box p {
+            color: var(--color-gray-dark);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .puesto__box p:last-child {
+            margin-bottom: 0;
+        }
+        
+        /* ===========================
+           REQUISITOS SECTION
+        =========================== */
+        .requisitos {
+            background-color: var(--color-gray-light);
+        }
+        
+        .requisitos__header {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .requisitos__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-md);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        @media (min-width: 768px) {
+            .requisitos__grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .requisito-card {
+            background-color: var(--color-white);
+            padding: var(--spacing-md);
+            border-radius: var(--radius-md);
+            border: 1px solid #E5E5E5;
+        }
+        
+        .requisito-card__icon {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .requisito-card__title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .requisito-card__text {
+            font-size: 0.9375rem;
+            color: var(--color-gray-dark);
+            line-height: 1.5;
+        }
+        
+        /* ===========================
+           BENEFICIOS SECTION
+        =========================== */
+        .beneficios {
+            background-color: var(--color-white);
+        }
+        
+        .beneficios__header {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .beneficios__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-md);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        @media (min-width: 768px) {
+            .beneficios__grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .beneficio-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-md);
+            background-color: var(--color-gray-light);
+            border-radius: var(--radius-md);
+        }
+        
+        .beneficio-item__icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .beneficio-item__content h3 {
+            font-size: 1.0625rem;
+            margin-bottom: 4px;
+            color: var(--color-dark);
+        }
+        
+        .beneficio-item__content p {
+            font-size: 0.9375rem;
+            color: var(--color-gray-dark);
+        }
+        
+        /* ===========================
+           UBICACION SECTION
+        =========================== */
+        .ubicacion {
+            background-color: var(--color-dark);
+            color: var(--color-white);
+            text-align: center;
+        }
+        
+        .ubicacion__icon {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .ubicacion__title {
+            color: var(--color-white);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .ubicacion__text {
+            max-width: 600px;
+            margin: 0 auto;
+            color: #D1D5DB;
+            font-size: 1.125rem;
+        }
+        
+        .ubicacion__text strong {
+            color: var(--color-white);
+            font-weight: 600;
+        }
+        
+        /* ===========================
+           FORMULARIO SECTION
+        =========================== */
+        .formulario {
+            background-color: var(--color-gray-light);
+        }
+        
+        .formulario__header {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .formulario__subtitle {
+            color: var(--color-gray-dark);
+            font-size: 1.125rem;
+            margin-top: var(--spacing-sm);
+        }
+        
+        .formulario__container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: var(--color-white);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        @media (min-width: 768px) {
+            .formulario__container {
+                padding: var(--spacing-xl);
+            }
+        }
+        
+        .form-section {
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .form-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .form-section__title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin-bottom: var(--spacing-md);
+            padding-bottom: var(--spacing-sm);
+            border-bottom: 2px solid var(--color-gray-light);
+        }
+        
+        .form-group {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .form-label {
+            display: block;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            color: var(--color-dark);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .form-label-required::after {
+            content: ' *';
+            color: var(--color-error);
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            font-size: 1rem;
+            font-family: var(--font-family);
+            color: var(--color-dark);
+            background-color: var(--color-white);
+            border: 2px solid #E5E5E5;
+            border-radius: var(--radius-md);
+            transition: var(--transition);
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.1);
+        }
+        
+        .form-input.error {
+            border-color: var(--color-error);
+        }
+        
+        .form-error {
+            display: none;
+            font-size: 0.875rem;
+            color: var(--color-error);
+            margin-top: var(--spacing-xs);
+        }
+        
+        .form-error.show {
+            display: block;
+        }
+        
+        /* Radio buttons personalizados */
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+        }
+        
+        .radio-option {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 0.875rem 1rem;
+            background-color: var(--color-white);
+            border: 2px solid #E5E5E5;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .radio-option:hover {
+            border-color: var(--color-primary);
+        }
+        
+        .radio-option.selected {
+            border-color: var(--color-primary);
+            background-color: rgba(196, 30, 58, 0.05);
+        }
+        
+        .radio-option input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        
+        .radio-custom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #D1D5DB;
+            border-radius: 50%;
+            margin-right: var(--spacing-sm);
+            transition: var(--transition);
+        }
+        
+        .radio-option.selected .radio-custom {
+            border-color: var(--color-primary);
+        }
+        
+        .radio-custom::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--color-primary);
+            transform: scale(0);
+            transition: var(--transition);
+        }
+        
+        .radio-option.selected .radio-custom::after {
+            transform: scale(1);
+        }
+        
+        .radio-label {
+            font-size: 0.9375rem;
+            color: var(--color-dark);
+            font-weight: 500;
+        }
+        
+        /* File upload */
+        .file-upload {
+            position: relative;
+        }
+        
+        .file-upload__input {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .file-upload__label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            background-color: var(--color-gray-light);
+            border: 2px dashed #D1D5DB;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .file-upload__label:hover {
+            border-color: var(--color-primary);
+            background-color: rgba(196, 30, 58, 0.05);
+        }
+        
+        .file-upload__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--spacing-xs);
+        }
+        
+        .file-upload__icon {
+            font-size: 2rem;
+            color: var(--color-gray-medium);
+        }
+        
+        .file-upload__text {
+            font-size: 0.9375rem;
+            color: var(--color-gray-dark);
+            font-weight: 500;
+        }
+        
+        .file-upload__hint {
+            font-size: 0.8125rem;
+            color: var(--color-gray-medium);
+        }
+        
+        .file-upload__filename {
+            display: none;
+            margin-top: var(--spacing-sm);
+            padding: var(--spacing-sm);
+            background-color: var(--color-success);
+            color: var(--color-white);
+            border-radius: var(--radius-sm);
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .file-upload__filename.show {
+            display: block;
+        }
+        
+        /* Loading state */
+        .btn-loading {
+            position: relative;
+            color: transparent;
+        }
+        
+        .btn-loading::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 50%;
+            left: 50%;
+            margin-left: -10px;
+            margin-top: -10px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spinner 0.6s linear infinite;
+        }
+        
+        @keyframes spinner {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        /* ===========================
+           SUCCESS SCREEN
+        =========================== */
+        .success-screen {
+            display: none;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: var(--spacing-xl);
+        }
+        
+        .success-screen.show {
+            display: block;
+        }
+        
+        .success-screen__icon {
+            font-size: 4rem;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .success-screen__title {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .success-screen__message {
+            font-size: 1.125rem;
+            color: var(--color-gray-dark);
+            margin-bottom: var(--spacing-xl);
+            line-height: 1.6;
+        }
+        
+        .success-screen__divider {
+            height: 1px;
+            background-color: #E5E5E5;
+            margin: var(--spacing-xl) 0;
+        }
+        
+        .success-screen__cta-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        /* ===========================
+           FOOTER
+        =========================== */
+        .footer {
+            background-color: var(--color-dark);
+            color: var(--color-white);
+            text-align: center;
+            padding: var(--spacing-lg) 0;
+        }
+        
+        .footer__text {
+            font-size: 0.875rem;
+            color: #9CA3AF;
+        }
+        
+        /* ===========================
+           UTILITIES
+        =========================== */
+        .hidden {
+            display: none !important;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        /* ===========================
+           ACCESSIBILITY
+        =========================== */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        
+        /* Skip to content link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-primary);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-link">Ir al contenido principal</a>
+    
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__logo">
+                <div class="hero__logo-text">MH Automotriz</div>
+                <div class="hero__logo-subtitle">Santa Tecla, El Salvador</div>
+            </div>
+            
+            <span class="hero__label">Oportunidad Laboral</span>
+            
+            <h1 class="hero__title">Estamos buscando<br>Jefe de Taller</h1>
+            
+            <p class="hero__subtitle">Forma parte del equipo de MH Automotriz.</p>
+            
+            <div class="hero__badges">
+                <div class="badge">
+                    <span>📍</span>
+                    <span>Merliot, Santa Tecla</span>
+                </div>
+                <div class="badge">
+                    <span>🔧</span>
+                    <span>Trabajo presencial</span>
+                </div>
+                <div class="badge">
+                    <span>💼</span>
+                    <span>Jefe de Taller</span>
+                </div>
+            </div>
+            
+            <div class="hero__cta">
+                <a href="#formulario" class="btn btn-primary btn-full">Quiero postularme</a>
+                <a href="https://wa.me/50378734051?text=Hola%2C%20vi%20la%20vacante%20de%20Jefe%20de%20Taller%20de%20MH%20Automotriz%20y%20estoy%20interesado%20en%20la%20oportunidad." 
+                   class="btn btn-secondary btn-full" 
+                   target="_blank" 
+                   rel="noopener noreferrer">Hablar por WhatsApp</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- EL PUESTO SECTION -->
+    <section id="main-content" class="section puesto">
+        <div class="container">
+            <div class="puesto__header">
+                <h2 class="puesto__title">El puesto</h2>
+                <p class="puesto__description">
+                    Buscamos un profesional con experiencia en mecánica automotriz para liderar nuestro taller, supervisar operaciones técnicas y garantizar la calidad del servicio.
+                </p>
+            </div>
+            
+            <div class="puesto__content">
+                <div class="puesto__box">
+                    <p><strong>Como Jefe de Taller, serás responsable de:</strong></p>
+                    <p>Coordinar y supervisar el trabajo del equipo técnico, realizar diagnósticos complejos, gestionar órdenes de trabajo, mantener comunicación directa con clientes, apoyar en la cotización de repuestos y asegurar que cada vehículo salga en óptimas condiciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- REQUISITOS SECTION -->
+    <section class="section requisitos">
+        <div class="container">
+            <div class="requisitos__header">
+                <h2>¿Qué buscamos?</h2>
+            </div>
+            
+            <div class="requisitos__grid">
+                <div class="requisito-card">
+                    <div class="requisito-card__icon">🎓</div>
+                    <h3 class="requisito-card__title">Formación técnica</h3>
+                    <p class="requisito-card__text">Bachiller industrial con opción en mecánica automotriz</p>
+                </div>
+                
+                <div class="requisito-card">
+                    <div class="requisito-card__icon">⚙️</div>
+                    <h3 class="requisito-card__title">Experiencia</h3>
+                    <p class="requisito-card__text">1 a 2 años de experiencia en puestos similares</p>
+                </div>
+                
+                <div class="requisito-card">
+                    <div class="requisito-card__icon">🚗</div>
+                    <h3 class="requisito-card__title">Licencia de conducir</h3>
+                    <p class="requisito-card__text">Licencia de conducir liviana vigente</p>
+                </div>
+                
+                <div class="requisito-card">
+                    <div class="requisito-card__icon">🔧</div>
+                    <h3 class="requisito-card__title">Conocimientos técnicos</h3>
+                    <p class="requisito-card__text">Mantenimiento preventivo y correctivo de vehículos livianos y de hasta 5 toneladas</p>
+                </div>
+                
+                <div class="requisito-card">
+                    <div class="requisito-card__icon">💻</div>
+                    <h3 class="requisito-card__title">Diagnóstico electrónico</h3>
+                    <p class="requisito-card__text">Manejo de escáner y equipos de diagnóstico</p>
+                </div>
+                
+                <div class="requisito-card">
+                    <div class="requisito-card__icon">👥</div>
+                    <h3 class="requisito-card__title">Habilidades personales</h3>
+                    <p class="requisito-card__text">Organización, proactividad y buena comunicación con clientes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- BENEFICIOS SECTION -->
+    <section class="section beneficios">
+        <div class="container">
+            <div class="beneficios__header">
+                <h2>¿Qué ofrecemos?</h2>
+            </div>
+            
+            <div class="beneficios__grid">
+                <div class="beneficio-item">
+                    <div class="beneficio-item__icon">✓</div>
+                    <div class="beneficio-item__content">
+                        <h3>Prestaciones de ley</h3>
+                        <p>Cumplimiento total de todas las prestaciones laborales</p>
+                    </div>
+                </div>
+                
+                <div class="beneficio-item">
+                    <div class="beneficio-item__icon">📈</div>
+                    <div class="beneficio-item__content">
+                        <h3>Crecimiento profesional</h3>
+                        <p>Oportunidades reales de desarrollo y capacitación</p>
+                    </div>
+                </div>
+                
+                <div class="beneficio-item">
+                    <div class="beneficio-item__icon">🏢</div>
+                    <div class="beneficio-item__content">
+                        <h3>Estabilidad laboral</h3>
+                        <p>Contrato estable en una empresa consolidada</p>
+                    </div>
+                </div>
+                
+                <div class="beneficio-item">
+                    <div class="beneficio-item__icon">🤝</div>
+                    <div class="beneficio-item__content">
+                        <h3>Buen ambiente de trabajo</h3>
+                        <p>Equipo profesional y ambiente de respeto</p>
+                    </div>
+                </div>
+                
+                <div class="beneficio-item">
+                    <div class="beneficio-item__icon">💰</div>
+                    <div class="beneficio-item__content">
+                        <h3>Salario competitivo</h3>
+                        <p>Remuneración según capacidades y experiencia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- UBICACION SECTION -->
+    <section class="section ubicacion">
+        <div class="container">
+            <div class="ubicacion__icon">📍</div>
+            <h2 class="ubicacion__title">Merliot, Santa Tecla</h2>
+            <div class="ubicacion__text">
+                <p><strong>Trabajo 100% presencial.</strong></p>
+                <p>El traslado al lugar de trabajo corre por cuenta del candidato.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FORMULARIO SECTION -->
+    <section id="formulario" class="section formulario">
+        <div class="container">
+            <div class="formulario__header">
+                <h2>¿Te interesa la oportunidad?</h2>
+                <p class="formulario__subtitle">Completa tus datos y cuéntanos sobre tu experiencia. Te tomará solo unos minutos.</p>
+            </div>
+            
+            <div class="formulario__container">
+                <!-- Formulario -->
+                <form id="applicationForm" class="application-form">
+                    <!-- SECCIÓN 1: Tu información -->
+                    <div class="form-section">
+                        <h3 class="form-section__title">Tu información</h3>
+                        
+                        <div class="form-group">
+                            <label for="fullName" class="form-label form-label-required">Nombre completo</label>
+                            <input type="text" 
+                                   id="fullName" 
+                                   name="fullName" 
+                                   class="form-input" 
+                                   placeholder="Ej: Juan Carlos Pérez"
+                                   required
+                                   aria-required="true">
+                            <div class="form-error" id="fullNameError" role="alert"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="whatsapp" class="form-label form-label-required">Número de WhatsApp</label>
+                            <input type="tel" 
+                                   id="whatsapp" 
+                                   name="whatsapp" 
+                                   class="form-input" 
+                                   placeholder="Ej: 7000-0000"
+                                   required
+                                   aria-required="true">
+                            <div class="form-error" id="whatsappError" role="alert"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label form-label-required">Correo electrónico</label>
+                            <input type="email" 
+                                   id="email" 
+                                   name="email" 
+                                   class="form-input" 
+                                   placeholder="Ej: [email protected]"
+                                   required
+                                   aria-required="true">
+                            <div class="form-error" id="emailError" role="alert"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- SECCIÓN 2: Tu experiencia -->
+                    <div class="form-section">
+                        <h3 class="form-section__title">Tu experiencia</h3>
+                        
+                        <div class="form-group">
+                            <label class="form-label form-label-required">
+                                ¿Cuánto tiempo tienes de experiencia trabajando en mecánica automotriz?
+                            </label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="experience" value="Menos de 1 año" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-label">Menos de 1 año</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="experience" value="1-2 años" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-label">1–2 años</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="experience" value="3-5 años" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-label">3–5 años</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="experience" value="Más de 5 años" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-label">Más de 5 años</span>
+                                </label>
+                            </div>
+                            <div class="form-error" id="experienceError" role="alert"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label form-label-required">
+                                ¿Has trabajado como jefe, encargado o responsable de un taller?
+                            </label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="supervisor" value="Sí" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-label">Sí</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="supervisor" value="No" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-label">No</span>
+                                </label>
+                            </div>
+                            <div class="form-error" id="supervisorError" role="alert"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label form-label-required">
+                                ¿Tienes experiencia utilizando escáner para diagnóstico automotriz?
+                            </label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="scanner" value="Sí" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-label">Sí</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="scanner" value="No" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-label">No</span>
+                                </label>
+                            </div>
+                            <div class="form-error" id="scannerError" role="alert"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label form-label-required">
+                                ¿Tienes licencia de conducir liviana vigente?
+                            </label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="license" value="Sí" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-label">Sí</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="license" value="No" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-label">No</span>
+                                </label>
+                            </div>
+                            <div class="form-error" id="licenseError" role="alert"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label form-label-required">
+                                El puesto es presencial en Merliot, Santa Tecla. ¿Puedes trasladarte diariamente por tus propios medios?
+                            </label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="transport" value="Sí" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-label">Sí</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="transport" value="No" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-label">No</span>
+                                </label>
+                            </div>
+                            <div class="form-error" id="transportError" role="alert"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- SECCIÓN 3: Tu CV -->
+                    <div class="form-section">
+                        <h3 class="form-section__title">Tu CV</h3>
+                        
+                        <div class="form-group">
+                            <label class="form-label form-label-required">Adjunta tu CV</label>
+                            <div class="file-upload">
+                                <input type="file" 
+                                       id="cvFile" 
+                                       name="cvFile" 
+                                       class="file-upload__input"
+                                       accept=".pdf,.doc,.docx"
+                                       required
+                                       aria-required="true">
+                                <label for="cvFile" class="file-upload__label">
+                                    <div class="file-upload__content">
+                                        <div class="file-upload__icon">📄</div>
+                                        <div class="file-upload__text">Haz clic para seleccionar tu CV</div>
+                                        <div class="file-upload__hint">PDF, DOC o DOCX (máx. 5MB)</div>
+                                    </div>
+                                </label>
+                                <div class="file-upload__filename" id="fileName"></div>
+                            </div>
+                            <div class="form-error" id="cvFileError" role="alert"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Botón Submit -->
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        Enviar postulación
+                    </button>
+                </form>
+                
+                <!-- Pantalla de éxito (oculta por defecto) -->
+                <div class="success-screen" id="successScreen">
+                    <div class="success-screen__icon">🔧</div>
+                    <h2 class="success-screen__title">¡Gracias por postularte!</h2>
+                    <p class="success-screen__message">
+                        Recibimos tu información correctamente. Nuestro equipo revisará tu perfil y, si coincide con lo que buscamos, nos pondremos en contacto contigo.
+                    </p>
+                    <div class="success-screen__divider"></div>
+                    <p class="success-screen__cta-title">¿Prefieres hablar directamente con nosotros?</p>
+                    <a href="https://wa.me/50378734051?text=Hola%2C%20vi%20la%20vacante%20de%20Jefe%20de%20Taller%20de%20MH%20Automotriz%20y%20estoy%20interesado%20en%20la%20oportunidad." 
+                       class="btn btn-primary"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Escribir por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">&copy; 2026 MH Automotriz. Santa Tecla, El Salvador.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // ===========================
+        // CONFIGURACIÓN
+        // ===========================
+        const APPS_SCRIPT_ENDPOINT = " https://script.google.com/macros/s/AKfycbzdvVB9sER-MHjLsvgu01Pl9bcCZjlp1l9EjYjFpwG_DyfJiR8IG3OgDUmVqk73KsfR/exec
+
+"; // TODO: Agregar URL de Google Apps Script
+        const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
+        
+        // ===========================
+        // ELEMENTOS DEL DOM
+        // ===========================
+        const form = document.getElementById('applicationForm');
+        const successScreen = document.getElementById('successScreen');
+        const submitBtn = document.getElementById('submitBtn');
+        const cvFileInput = document.getElementById('cvFile');
+        const fileNameDisplay = document.getElementById('fileName');
+        
+        // ===========================
+        // SMOOTH SCROLL
+        // ===========================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href.length > 1) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+        
+        // ===========================
+        // RADIO BUTTONS VISUALES
+        // ===========================
+        document.querySelectorAll('.radio-option').forEach(option => {
+            option.addEventListener('click', function() {
+                const input = this.querySelector('input[type="radio"]');
+                const name = input.getAttribute('name');
+                
+                // Remover selección de todos los options del mismo grupo
+                document.querySelectorAll(`input[name="${name}"]`).forEach(radio => {
+                    radio.closest('.radio-option').classList.remove('selected');
+                });
+                
+                // Agregar selección al option clickeado
+                this.classList.add('selected');
+                input.checked = true;
+                
+                // Limpiar error si existe
+                const errorElement = document.getElementById(`${name}Error`);
+                if (errorElement) {
+                    errorElement.classList.remove('show');
+                    errorElement.textContent = '';
+                }
+            });
+        });
+        
+        // ===========================
+        // FILE UPLOAD
+        // ===========================
+        cvFileInput.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            const errorElement = document.getElementById('cvFileError');
+            
+            if (file) {
+                // Validar tamaño
+                if (file.size > MAX_FILE_SIZE) {
+                    showError('cvFile', 'El archivo es demasiado grande. El tamaño máximo es 5MB.');
+                    cvFileInput.value = '';
+                    fileNameDisplay.classList.remove('show');
+                    return;
+                }
+                
+                // Validar extensión
+                const allowedExtensions = ['.pdf', '.doc', '.docx'];
+                const fileName = file.name.toLowerCase();
+                const isValidExtension = allowedExtensions.some(ext => fileName.endsWith(ext));
+                
+                if (!isValidExtension) {
+                    showError('cvFile', 'Por favor selecciona un archivo PDF, DOC o DOCX.');
+                    cvFileInput.value = '';
+                    fileNameDisplay.classList.remove('show');
+                    return;
+                }
+                
+                // Mostrar nombre del archivo
+                fileNameDisplay.textContent = `✓ ${file.name}`;
+                fileNameDisplay.classList.add('show');
+                errorElement.classList.remove('show');
+                errorElement.textContent = '';
+            }
+        });
+        
+        // ===========================
+        // VALIDACIÓN DEL FORMULARIO
+        // ===========================
+        function showError(fieldName, message) {
+            const errorElement = document.getElementById(`${fieldName}Error`);
+            const inputElement = document.getElementById(fieldName);
+            
+            if (errorElement) {
+                errorElement.textContent = message;
+                errorElement.classList.add('show');
+            }
+            
+            if (inputElement) {
+                inputElement.classList.add('error');
+                inputElement.focus();
+            }
+        }
+        
+        function clearError(fieldName) {
+            const errorElement = document.getElementById(`${fieldName}Error`);
+            const inputElement = document.getElementById(fieldName);
+            
+            if (errorElement) {
+                errorElement.textContent = '';
+                errorElement.classList.remove('show');
+            }
+            
+            if (inputElement) {
+                inputElement.classList.remove('error');
+            }
+        }
+        
+        function validateField(field) {
+            const value = field.value.trim();
+            const fieldName = field.getAttribute('name');
+            
+            // Limpiar errores previos
+            clearError(fieldName);
+            
+            // Validación según tipo de campo
+            if (field.type === 'email') {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!value) {
+                    showError(fieldName, 'Por favor ingresa tu correo electrónico.');
+                    return false;
+                }
+                if (!emailRegex.test(value)) {
+                    showError(fieldName, 'Por favor ingresa un correo electrónico válido.');
+                    return false;
+                }
+            } else if (field.type === 'tel') {
+                if (!value) {
+                    showError(fieldName, 'Por favor ingresa tu número de WhatsApp.');
+                    return false;
+                }
+                if (value.length < 8) {
+                    showError(fieldName, 'Por favor ingresa un número de teléfono válido.');
+                    return false;
+                }
+            } else if (field.type === 'text') {
+                if (!value) {
+                    showError(fieldName, 'Por favor completa este campo.');
+                    return false;
+                }
+                if (value.length < 3) {
+                    showError(fieldName, 'Por favor ingresa un nombre válido.');
+                    return false;
+                }
+            }
+            
+            return true;
+        }
+        
+        function validateRadioGroup(name) {
+            const radios = document.querySelectorAll(`input[name="${name}"]`);
+            const checked = Array.from(radios).some(radio => radio.checked);
+            
+            if (!checked) {
+                const errorElement = document.getElementById(`${name}Error`);
+                if (errorElement) {
+                    errorElement.textContent = 'Por favor selecciona una opción.';
+                    errorElement.classList.add('show');
+                }
+                return false;
+            }
+            
+            return true;
+        }
+        
+        // Validación en tiempo real
+        ['fullName', 'whatsapp', 'email'].forEach(fieldName => {
+            const field = document.getElementById(fieldName);
+            if (field) {
+                field.addEventListener('blur', () => validateField(field));
+                field.addEventListener('input', () => clearError(fieldName));
+            }
+        });
+        
+        // ===========================
+        // ENVÍO DEL FORMULARIO
+        // ===========================
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Validar todos los campos
+            let isValid = true;
+            
+            // Validar campos de texto
+            const textFields = ['fullName', 'whatsapp', 'email'];
+            textFields.forEach(fieldName => {
+                const field = document.getElementById(fieldName);
+                if (!validateField(field)) {
+                    isValid = false;
+                }
+            });
+            
+            // Validar radio groups
+            const radioGroups = ['experience', 'supervisor', 'scanner', 'license', 'transport'];
+            radioGroups.forEach(groupName => {
+                if (!validateRadioGroup(groupName)) {
+                    isValid = false;
+                }
+            });
+            
+            // Validar archivo
+            if (!cvFileInput.files.length) {
+                showError('cvFile', 'Por favor selecciona tu CV para continuar.');
+                isValid = false;
+            }
+            
+            if (!isValid) {
+                return;
+            }
+            
+            // Preparar datos
+            const formData = new FormData(form);
+            
+            // Mostrar loading state
+            submitBtn.disabled = true;
+            submitBtn.classList.add('btn-loading');
+            
+            try {
+                // Si no hay endpoint configurado, simular éxito después de 1 segundo
+                if (!APPS_SCRIPT_ENDPOINT) {
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+                    showSuccessScreen();
+                    return;
+                }
+                
+                // Enviar a Google Apps Script
+                const response = await fetch(APPS_SCRIPT_ENDPOINT, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (!response.ok) {
+                    throw new Error('Error al enviar el formulario');
+                }
+                
+                // Mostrar pantalla de éxito
+                showSuccessScreen();
+                
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Hubo un problema al enviar tu postulación. Por favor intenta nuevamente o contáctanos por WhatsApp.');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('btn-loading');
+            }
+        });
+        
+        function showSuccessScreen() {
+            form.classList.add('hidden');
+            successScreen.classList.add('show');
+            
+            // Scroll hacia la pantalla de éxito
+            successScreen.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }
+    </script>
+</body>
+</html>
