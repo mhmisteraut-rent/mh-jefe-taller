@@ -564,13 +564,14 @@
         .radio-option {
             position: relative;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             padding: 0.875rem 1rem;
             background-color: var(--color-white);
             border: 2px solid #E5E5E5;
             border-radius: var(--radius-md);
             cursor: pointer;
             transition: var(--transition);
+            min-height: 50px;
         }
         
         .radio-option:hover {
@@ -594,9 +595,11 @@
             justify-content: center;
             width: 20px;
             height: 20px;
+            min-width: 20px;
             border: 2px solid #D1D5DB;
             border-radius: 50%;
             margin-right: var(--spacing-sm);
+            margin-top: 2px;
             transition: var(--transition);
         }
         
@@ -622,6 +625,8 @@
             font-size: 0.9375rem;
             color: var(--color-dark);
             font-weight: 500;
+            line-height: 1.4;
+            flex: 1;
         }
         
         /* File upload */
