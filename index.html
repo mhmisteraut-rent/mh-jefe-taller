@@ -1448,9 +1448,6 @@ endo<!DOCTYPE html>
                 return;
             }
             
-            // Preparar datos
-            const formData = new FormData(form);
-            
             // Mostrar loading state
             submitBtn.disabled = true;
             submitBtn.classList.add('btn-loading');
@@ -1462,6 +1459,38 @@ endo<!DOCTYPE html>
                     showSuccessScreen();
                     return;
                 }
+                
+                // Convertir archivo a base64
+                const file = cvFileInput.files[0];
+                const reader = new FileReader();
+                
+                const fileBase64 = await new Promise((resolve, reject) => {
+                    reader.onload = () => {
+                        const base64 = reader.result.split(',')[1];
+                        resolve(base64);
+                    };
+                    reader.onerror = reject;
+                    reader.readAsDataURL(file);
+                });
+                
+                // Preparar datos como URLSearchParams
+                const formData = new URLSearchParams();
+                formData.append('fullName', document.getElementById('fullName').value);
+                formData.append('whatsapp', document.getElementById('whatsapp').value);
+                formData.append('email', document.getElementById('email').value);
+                
+                // Agregar respuestas de radio buttons
+                radioGroups.forEach(groupName => {
+                    const selected = document.querySelector(`input[name="${groupName}"]:checked`);
+                    if (selected) {
+                        formData.append(groupName, selected.value);
+                    }
+                });
+                
+                // Agregar datos del archivo
+                formData.append('cvFileData', fileBase64);
+                formData.append('cvFileName', file.name);
+                formData.append('cvFileMimeType', file.type);
                 
                 // Enviar a Google Apps Script
                 const response = await fetch(APPS_SCRIPT_ENDPOINT, {
