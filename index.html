@@ -1219,9 +1219,7 @@ endo<!DOCTYPE html>
         // ===========================
         // CONFIGURACIÓN
         // ===========================
-        const APPS_SCRIPT_ENDPOINT = " https://script.google.com/macros/s/AKfycbzdvVB9sER-MHjLsvgu01Pl9bcCZjlp1l9EjYjFpwG_DyfJiR8IG3OgDUmVqk73KsfR/exec
-
-"; // TODO: Agregar URL de Google Apps Script
+        const APPS_SCRIPT_ENDPOINT = "https://script.google.com/macros/s/AKfycbzdvVB9sER-MHjLsvgu01Pl9bcCZjlp1l9EjYjFpwG_DyfJiR8IG3OgDUmVqk73KsfR/exec";
         const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
         
         // ===========================
@@ -1256,13 +1254,18 @@ endo<!DOCTYPE html>
         // RADIO BUTTONS VISUALES
         // ===========================
         document.querySelectorAll('.radio-option').forEach(option => {
-            option.addEventListener('click', function() {
+            option.addEventListener('click', function(e) {
                 const input = this.querySelector('input[type="radio"]');
+                if (!input) return;
+                
                 const name = input.getAttribute('name');
                 
                 // Remover selección de todos los options del mismo grupo
                 document.querySelectorAll(`input[name="${name}"]`).forEach(radio => {
-                    radio.closest('.radio-option').classList.remove('selected');
+                    const parent = radio.parentElement;
+                    if (parent && parent.classList.contains('radio-option')) {
+                        parent.classList.remove('selected');
+                    }
                 });
                 
                 // Agregar selección al option clickeado
@@ -1276,6 +1279,28 @@ endo<!DOCTYPE html>
                     errorElement.textContent = '';
                 }
             });
+            
+            // También escuchar cambios directos en el radio input
+            const input = option.querySelector('input[type="radio"]');
+            if (input) {
+                input.addEventListener('change', function() {
+                    const name = this.getAttribute('name');
+                    
+                    // Remover selección visual de todos
+                    document.querySelectorAll(`input[name="${name}"]`).forEach(radio => {
+                        const parent = radio.parentElement;
+                        if (parent && parent.classList.contains('radio-option')) {
+                            parent.classList.remove('selected');
+                        }
+                    });
+                    
+                    // Agregar a este
+                    const parent = this.parentElement;
+                    if (parent && parent.classList.contains('radio-option')) {
+                        parent.classList.add('selected');
+                    }
+                });
+            }
         });
         
         // ===========================
