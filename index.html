@@ -1527,23 +1527,45 @@
                 formData.append('cvFileName', file.name);
                 formData.append('cvFileMimeType', file.type);
                 
-                // Enviar a Google Apps Script
+                // Enviar a Google Apps Script con timeout
                 submitBtn.textContent = 'Enviando...';
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 60000); // 60 segundos timeout
+                
                 const response = await fetch(APPS_SCRIPT_ENDPOINT, {
                     method: 'POST',
-                    body: formData
+                    body: formData,
+                    signal: controller.signal
                 });
                 
+                clearTimeout(timeoutId);
+                
                 if (!response.ok) {
-                    throw new Error('Error al enviar el formulario');
+                    const errorText = await response.text();
+                    console.error('Error del servidor:', errorText);
+                    throw new Error('Error al enviar el formulario: ' + response.status);
                 }
+                
+                const result = await response.json();
+                console.log('Resultado:', result);
                 
                 // Mostrar pantalla de éxito
                 showSuccessScreen();
                 
             } catch (error) {
-                console.error('Error:', error);
-                alert('Hubo un problema al enviar tu postulación. Por favor intenta nuevamente o contáctanos por WhatsApp.');
+                console.error('Error completo:', error);
+                
+                let errorMessage = 'Hubo un problema al enviar tu postulación.';
+                
+                if (error.name === 'AbortError') {
+                    errorMessage = 'La solicitud tardó demasiado. El archivo puede ser muy grande. Por favor intenta con un CV más pequeño o contáctanos por WhatsApp.';
+                } else if (error.message.includes('Failed to fetch')) {
+                    errorMessage = 'No se pudo conectar con el servidor. Verifica tu conexión a internet e intenta nuevamente.';
+                } else if (error.message.includes('NetworkError')) {
+                    errorMessage = 'Error de red. Por favor verifica tu conexión e intenta nuevamente.';
+                }
+                
+                alert(errorMessage + '\n\nPuedes contactarnos directamente por WhatsApp.');
             } finally {
                 submitBtn.disabled = false;
                 submitBtn.classList.remove('btn-loading');
